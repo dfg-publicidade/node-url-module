@@ -10,7 +10,9 @@
         "test": "gulp clean && TS_NODE_FILES=true NODE_ENV=test NODE_OPTIONS=\"--max-old-space-size=4096\" nyc --reporter=html --reporter=text mocha --exit --timeout=100000",
         "test:all": "npm run test test/**/*.spec.ts test/**/**/*.spec.ts test/**/**/**/*.spec.ts"
     },
-    "dependencies": {},
+    "dependencies": {
+        "@dfgpublicidade/node-app-module": "git+https://github.com/dfg-publicidade/node-app-module.git"
+    },
     "devDependencies": {
         "@dfgpublicidade/eslint-config": "git+ssh://git@github.com/dfg-publicidade/eslint-config.git",
         "@typescript-eslint/eslint-plugin": "^4.7.0",
