@@ -100,11 +100,11 @@ describe('index.ts', (): void => {
         expect(Url.matchUri('invalid uri')).to.be.false;
     });
 
-    it('24. matchUri', async (): Promise<void> => {
+    it('25. matchUri', async (): Promise<void> => {
         expect(Url.matchUri('test@test')).to.be.false;
     });
 
-    it('24. matchUri', async (): Promise<void> => {
+    it('26. matchUri', async (): Promise<void> => {
         expect(Url.matchUri('/test/test2')).to.be.true;
     });
 });
