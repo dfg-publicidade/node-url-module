@@ -11,7 +11,7 @@ describe('index.ts', (): void => {
     it('2. matchUrl', async (): Promise<void> => {
         expect(Url.matchUrl('//test.com')).to.be.true;
     });
-    
+
     it('3. matchUrl', async (): Promise<void> => {
         expect(Url.matchUrl('http://test.com')).to.be.true;
     });
@@ -51,7 +51,7 @@ describe('index.ts', (): void => {
     it('12. matchUrl', async (): Promise<void> => {
         expect(Url.matchUrl('https://test.com')).to.be.true;
     });
-    
+
     it('13. matchUrl', async (): Promise<void> => {
         expect(Url.matchUrl('https://user@test.com')).to.be.true;
     });
